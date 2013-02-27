@@ -1,1 +1,0 @@
-/Users/why/.vimrc
