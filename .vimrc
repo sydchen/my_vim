@@ -10,6 +10,7 @@ Bundle 'matchit.zip'
 Bundle 'ruby-matchit'
 Bundle 'fugitive.vim'
 Bundle 'tpope/vim-rails.git'
+" Bundle 'vim-scripts/rails.vim'
 Bundle 'snipMate'
 Bundle 'epmatsw/ag.vim'
 Bundle 'vim-ruby/vim-ruby.git'
@@ -21,6 +22,7 @@ Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'tpope/vim-markdown.git'
+Bundle 'sydchen/tslime.vim'
 
 set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
 set fileencoding=utf8
@@ -119,3 +121,8 @@ nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
 " map <leader>gr :topleft :split config/routes.rb<cr>
 map <leader>gr :tabe config/routes.rb<cr>
 map <leader>gg :tabe Gemfile<cr>
+
+
+map <leader>t :call Send_to_Tmux("be rspec ".expand("%")."\n")<CR>
+map <leader>s :call Send_to_Tmux("be rspec ".expand("%").":".line(".")."\n")<CR>
+
