@@ -23,6 +23,7 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'tpope/vim-markdown.git'
 Bundle 'sydchen/tslime.vim'
+Bundle 'vim-scripts/closetag.vim'
 
 set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
 set fileencoding=utf8
