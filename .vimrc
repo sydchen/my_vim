@@ -127,3 +127,5 @@ map <leader>gg :tabe Gemfile<cr>
 map <leader>t :call Send_to_Tmux("be rspec ".expand("%")."\n")<CR>
 map <leader>s :call Send_to_Tmux("be rspec ".expand("%").":".line(".")."\n")<CR>
 
+" tag jump
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
