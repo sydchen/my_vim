@@ -81,7 +81,10 @@ nmap <F3> :set invpaste<CR>
 "FuzzyFinder
 nnoremap <silent> fb     :FufBuffer<CR>
 nnoremap <silent> ff     :FufFileWithCurrentBufferDir<CR>
-nnoremap <silent> fd     :FufDirWithFullCwd<CR>
+nnoremap <silent> fc     :FufFile config/<CR>
+nnoremap <silent> fv     :FufFile app/views/<CR>
+nnoremap <silent> fj     :FufFile app/assets/javascripts/<CR>
+nnoremap <silent> fs     :FufFile app/assets/stylesheets/<CR>
 
 "tabpage display
 hi TabLineFill ctermfg=black
@@ -123,9 +126,9 @@ nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
 map <leader>gr :tabe config/routes.rb<cr>
 map <leader>gg :tabe Gemfile<cr>
 
-
 map <leader>t :call Send_to_Tmux("be rspec ".expand("%")."\n")<CR>
 map <leader>s :call Send_to_Tmux("be rspec ".expand("%").":".line(".")."\n")<CR>
 
 " tag jump
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
