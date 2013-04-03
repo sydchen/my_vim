@@ -10,7 +10,6 @@ Bundle 'matchit.zip'
 Bundle 'ruby-matchit'
 Bundle 'fugitive.vim'
 Bundle 'tpope/vim-rails.git'
-" Bundle 'vim-scripts/rails.vim'
 Bundle 'snipMate'
 Bundle 'epmatsw/ag.vim'
 Bundle 'vim-ruby/vim-ruby.git'
@@ -19,9 +18,10 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-endwise'
 Bundle 'maxbrunsfeld/vim-yankstack'
 " Bundle 'The-NERD-Commenter'
-Bundle 'tomtom/tcomment_vim'
+" Bundle 'tomtom/tcomment_vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'tpope/vim-markdown.git'
+Bundle 'sydchen/tslime.vim.git'
 Bundle 'sydchen/tslime.vim'
 Bundle 'vim-scripts/closetag.vim'
 
@@ -63,9 +63,8 @@ map <S-H> gT
 " go to next tab
 map <S-L> gt
 
-" new tab
+" tab control
 map <C-t><C-t> :tabnew<CR>
-" close tab
 map <C-t><C-w> :tabclose<CR>
 
 nmap gf :tabedit <cfile><CR>
