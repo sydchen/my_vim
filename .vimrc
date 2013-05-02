@@ -118,7 +118,7 @@ vnoremap ts :s/\s\+$//<CR>
 nnoremap ts :%s/\s\+$//<CR>
 
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
-nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
+nmap <C-v> :call setreg("\"", system("pbpaste"), 'l')<CR>P
 
 " CtrlP
 " map <leader>gr :topleft :split config/routes.rb<cr>
