@@ -10,7 +10,7 @@ Bundle 'matchit.zip'
 Bundle 'ruby-matchit'
 Bundle 'fugitive.vim'
 Bundle 'tpope/vim-rails.git'
-Bundle 'snipMate'
+" Bundle 'snipMate'
 Bundle 'epmatsw/ag.vim'
 Bundle 'vim-ruby/vim-ruby.git'
 Bundle 'ervandew/supertab.git'
@@ -93,6 +93,17 @@ hi Search     ctermfg=black     ctermbg=Yellow
 
 "Autocomplete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+" rails.vim
+let g:rails_projections = {
+      \ "app/presenters/*_presenter.rb": {
+      \   "command": "presenter",
+      \   "test": [
+      \     "spec/presenters/%s_presenter_spec.rb"
+      \   ]
+      \ },
+      \ "app/assets/javascripts/*.js": {"command": "javascript"}
+      \}
 
 fun! Global_symbol()
     let wordUnderCursor = expand("<cword>")
