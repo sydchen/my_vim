@@ -310,10 +310,10 @@ if version >= 700
   " Auto-completion
   "call s:X("Pmenu","ffffff","606060","","White","Black")
   "call s:X("PmenuSel","101010","eeeeee","","Black","White")
-  hi Pmenu           ctermfg=251   ctermbg=235
-  hi PmenuSel        ctermfg=Black ctermbg=149
-  hi PmenuSbar                     ctermbg=232
-  hi PmenuThumb      ctermfg=81
+  hi Pmenu           ctermfg=251   ctermbg=235 guifg=#c6c6c6 guibg=#444444
+  hi PmenuSel        ctermfg=Black ctermbg=149 guifg=#000000 guibg=#afd75f
+  hi PmenuSbar                     ctermbg=232               guibg=Black
+  hi PmenuThumb      ctermfg=81                guifg=#57d7ff
 endif
 
 call s:X("Visual","","404040","","",s:termBlack)
