@@ -10,7 +10,6 @@ Bundle 'matchit.zip'
 Bundle 'ruby-matchit'
 Bundle 'fugitive.vim'
 Bundle 'tpope/vim-rails.git'
-" Bundle 'snipMate'
 Bundle 'epmatsw/ag.vim'
 Bundle 'vim-ruby/vim-ruby.git'
 Bundle 'ervandew/supertab.git'
@@ -24,12 +23,14 @@ Bundle 'mattn/zencoding-vim'
 Bundle 'tpope/vim-markdown.git'
 Bundle 'sydchen/tslime.vim'
 Bundle 'vim-scripts/closetag.vim'
+Bundle 'tpope/vim-haml'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
 set fileencoding=utf8
 set encoding=utf8 
 set termencoding=utf8
-
 set nu
 set tabstop=4
 set shiftwidth=4
@@ -53,8 +54,11 @@ autocmd FileType make setlocal noexpandtab
 "autocmd FileType eruby colorscheme railscasts
 autocmd FileType ruby setlocal shiftwidth=2
 autocmd FileType ruby setlocal tabstop=2
+autocmd FileType haml setlocal tabstop=2
+autocmd FileType haml setlocal sw=2 et
 let do_syntax_sel_menu=1
 
+let mapleader = ','
 
 " move around tabs. conflict with the original screen top/bottom
 " comment them out if you want the original H/L
@@ -75,6 +79,7 @@ nmap <C-l> :bnext!<CR>
 nmap <F4> :bd<CR>
 
 nmap <F2> :NERDTreeToggle<CR> 
+nmap <leader>f :NERDTreeFind<CR>
 nmap <F3> :set invpaste<CR> 
 
 "FuzzyFinder
@@ -141,4 +146,8 @@ map <leader>s :call Send_to_Tmux("be rspec ".expand("%").":".line(".")."\n")<CR>
 
 " tag jump
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#353535 ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#353535 ctermbg=235
 
