@@ -107,7 +107,8 @@ let g:rails_projections = {
       \     "spec/presenters/%s_presenter_spec.rb"
       \   ]
       \ },
-      \ "app/assets/javascripts/*.js": {"command": "javascript"}
+      \ "app/assets/javascripts/*.js": {"command": "javascript"},
+      \ "app/assets/javascripts/*.js.coffee": {"command": "javascript"}
       \}
 
 fun! Global_symbol()
