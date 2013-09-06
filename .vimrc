@@ -16,12 +16,10 @@ Bundle 'ervandew/supertab.git'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-endwise'
 Bundle 'maxbrunsfeld/vim-yankstack'
-" Bundle 'The-NERD-Commenter'
-" Bundle 'tomtom/tcomment_vim'
-Bundle 'tpope/vim-commentary'
 Bundle 'mattn/zencoding-vim'
 Bundle 'tpope/vim-markdown.git'
-Bundle 'sydchen/tslime.vim'
+Bundle 'sydchen/tslime.vim.git'
+Bundle 'tpope/vim-commentary'
 Bundle 'vim-scripts/closetag.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'cakebaker/scss-syntax.vim'
@@ -29,12 +27,12 @@ Bundle 'nathanaelkane/vim-indent-guides'
 
 set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
 set fileencoding=utf8
-set encoding=utf8 
+set encoding=utf8
 set termencoding=utf8
 set nu
 set tabstop=4
 set shiftwidth=4
-set expandtab           "set et, expandtab,expand tab with space 
+set expandtab           "set et, expandtab,expand tab with space
 set smartindent
 set showcmd
 set ic                  "ignore case
@@ -85,6 +83,7 @@ nmap <F3> :set invpaste<CR>
 "FuzzyFinder
 nnoremap <silent> fb     :FufBuffer<CR>
 nnoremap <silent> ff     :FufFileWithCurrentBufferDir<CR>
+nnoremap <silent> ff     :FufRenewCache<CR>
 nnoremap <silent> fc     :FufFile config/<CR>
 nnoremap <silent> fv     :FufFile app/views/<CR>
 nnoremap <silent> fj     :FufFile app/assets/javascripts/<CR>
@@ -128,9 +127,9 @@ set laststatus=2
 
 filetype on
 filetype plugin on
-set nocp 
+set nocp
 
-"trim spaces at the end of lines 
+"trim spaces at the end of lines
 vnoremap ts :s/\s\+$//<CR>
 nnoremap ts :%s/\s\+$//<CR>
 
