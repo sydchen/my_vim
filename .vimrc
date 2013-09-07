@@ -83,7 +83,7 @@ nmap <F3> :set invpaste<CR>
 "FuzzyFinder
 nnoremap <silent> fb     :FufBuffer<CR>
 nnoremap <silent> ff     :FufFileWithCurrentBufferDir<CR>
-nnoremap <silent> ff     :FufRenewCache<CR>
+nnoremap <silent> fr     :FufRenewCache<CR>
 nnoremap <silent> fc     :FufFile config/<CR>
 nnoremap <silent> fv     :FufFile app/views/<CR>
 nnoremap <silent> fj     :FufFile app/assets/javascripts/<CR>
