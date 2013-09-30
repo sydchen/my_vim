@@ -16,7 +16,7 @@ Bundle 'ervandew/supertab.git'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-endwise'
 Bundle 'maxbrunsfeld/vim-yankstack'
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'tpope/vim-markdown.git'
 Bundle 'sydchen/tslime.vim.git'
 Bundle 'tpope/vim-commentary'
@@ -69,7 +69,7 @@ map <S-L> gt
 map <C-t><C-t> :tabnew<CR>
 map <C-t><C-w> :tabclose<CR>
 
-nmap gf :tabedit <cfile><CR>
+" nmap gf :tabedit <cfile><CR>
 
 " buffer control
 nmap <C-h> :bprev!<CR>
@@ -83,13 +83,12 @@ nmap <F3> :set invpaste<CR>
 "FuzzyFinder
 nnoremap <silent> fb     :FufBuffer<CR>
 nnoremap <silent> ff     :FufFileWithCurrentBufferDir<CR>
-nnoremap <silent> fr     :FufRenewCache<CR>
 nnoremap <silent> fc     :FufFile config/<CR>
 nnoremap <silent> fv     :FufFile app/views/<CR>
 nnoremap <silent> fj     :FufFile app/assets/javascripts/<CR>
 nnoremap <silent> fs     :FufFile app/assets/stylesheets/<CR>
 
-"tabpage display
+"tabpage
 hi TabLineFill ctermfg=black
 hi TabLine     ctermfg=white ctermbg=black
 hi TabLineSel  ctermfg=white ctermbg=darkred
@@ -137,6 +136,7 @@ vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 nmap <C-v> :call setreg("\"", system("pbpaste"), 'l')<CR>P
 
 " CtrlP
+map <Leader>r :CtrlPClearCache<CR>:FufRenewCache<CR>
 " map <leader>gr :topleft :split config/routes.rb<cr>
 map <leader>gr :tabe config/routes.rb<cr>
 map <leader>gg :tabe Gemfile<cr>
