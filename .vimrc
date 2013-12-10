@@ -42,7 +42,6 @@ set t_Co=256
 set bs=2
 set cursorline
 colorscheme jellybeans
-"colorscheme Tomorrow-Night
 
 "status at right bottom corner
 set ruler
@@ -76,9 +75,9 @@ nmap <C-h> :bprev!<CR>
 nmap <C-l> :bnext!<CR>
 nmap <F4> :bd<CR>
 
-nmap <F2> :NERDTreeToggle<CR> 
+nmap <F2> :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
-nmap <F3> :set invpaste<CR> 
+nmap <F3> :set invpaste<CR>
 
 "FuzzyFinder
 nnoremap <silent> fb     :FufBuffer<CR>
