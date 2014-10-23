@@ -24,6 +24,7 @@ Bundle 'tpope/vim-markdown.git'
 Bundle 'tpope/vim-rails.git'
 Bundle 'vim-ruby/vim-ruby.git'
 Bundle 'vim-scripts/closetag.vim'
+Bundle 'bling/vim-airline'
 
 set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
 set fileencoding=utf8
