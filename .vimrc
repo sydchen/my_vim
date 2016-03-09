@@ -10,7 +10,7 @@ Bundle 'ervandew/supertab.git'
 Bundle 'fugitive.vim'
 Bundle 'gmarik/vundle'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'matchit.zip'
+Bundle 'tmhedberg/matchit'
 Bundle 'mattn/emmet-vim'
 Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'nathanaelkane/vim-indent-guides'
@@ -25,6 +25,8 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'vim-ruby/vim-ruby.git'
 Bundle 'vim-scripts/closetag.vim'
 Bundle 'bling/vim-airline'
+Bundle 'mhartington/oceanic-next'
+Bundle 'airblade/vim-gitgutter'
 
 set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
 set fileencoding=utf8
