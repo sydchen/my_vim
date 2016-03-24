@@ -28,9 +28,9 @@ Bundle 'vim-airline/vim-airline-themes'
 Bundle 'vim-ruby/vim-ruby.git'
 Bundle 'vim-scripts/closetag.vim'
 
-Bundle 'bling/vim-airline'
-Bundle 'mhartington/oceanic-next'
-Bundle 'airblade/vim-gitgutter'
+" vim-airline integrates with vim-gitgutter
+let g:airline#extensions#hunks#enabled = 0
+let g:airline_theme='tomorrow'
 
 set fileencodings=utf-8,big5,gbk,euc-jp,euc-kr,utf-bom,iso8859-1
 set fileencoding=utf8
