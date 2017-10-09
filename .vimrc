@@ -1,12 +1,13 @@
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'FuzzyFinder'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+
 Bundle 'L9'
+Bundle 'FuzzyFinder'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bufexplorer.zip'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'ctrlp.vim'
-Bundle 'epmatsw/ag.vim'
 Bundle 'ervandew/supertab.git'
 Bundle 'fugitive.vim'
 Bundle 'gmarik/vundle'
@@ -15,6 +16,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'mhartington/oceanic-next'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'ruby-matchit'
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'sydchen/tslime.vim.git'
 Bundle 'tmhedberg/matchit'
