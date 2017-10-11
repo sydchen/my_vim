@@ -1,3 +1,5 @@
+set nocompatible              " be iMproved, required
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -29,6 +31,8 @@ Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
 Bundle 'vim-ruby/vim-ruby.git'
 Bundle 'vim-scripts/closetag.vim'
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " vim-airline integrates with vim-gitgutter
 let g:airline#extensions#hunks#enabled = 0
