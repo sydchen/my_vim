@@ -34,6 +34,7 @@ alias gt='git status'
 alias rsp='rails s -p'
 alias rsc='rails c'
 alias f='find'
+alias pg='ps aux | grep '
 
 D='\e[37;40m'
 PINK='\e[35;40m'
