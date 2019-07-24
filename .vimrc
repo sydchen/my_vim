@@ -165,5 +165,6 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#353535 ctermbg=235
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#353535 ctermbg=235
-autocmd BufNewFile,BufRead *.mas set syntax=mason
+autocmd BufNewFile,BufRead *.mas set filetype=mason
+autocmd FileType mason setlocal commentstring=#\ %s
 " autocmd BufWritePost * !~/scripts/ma_upload.sh <afile>
