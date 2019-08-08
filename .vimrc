@@ -143,6 +143,11 @@ filetype on
 filetype plugin on
 set nocp
 
+augroup PerlSettings
+    autocmd!
+    autocmd FileType perl setlocal complete-=i
+augroup END
+
 "trim spaces at the end of lines
 vnoremap ts :s/\s\+$//<CR>
 nnoremap ts :%s/\s\+$//<CR>
