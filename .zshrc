@@ -100,6 +100,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pg='ps aux | grep'
+alias ff='f() { echo find . -name "$1*"; find . -name "$1*" };f'
+
+
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 
