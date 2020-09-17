@@ -66,8 +66,10 @@ ZSH_THEME="steeef"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z zsh-autosuggestions)
+plugins=(git z zsh-autosuggestions ssh-agent)
 
+zstyle :omz:plugins:ssh-agent identities id_rsa_github
+zstyle :omz:plugins:ssh-agent lifetime 10h
 source $ZSH/oh-my-zsh.sh
 # source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -107,3 +109,20 @@ bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 
 eval "$(rbenv init -)"
+
+# colorful man page
+export PAGER="`which less` -s"
+export BROWSER="$PAGER"
+export LESS_TERMCAP_mb=$'\E[38;5;167m'
+export LESS_TERMCAP_md=$'\E[38;5;39m'
+export LESS_TERMCAP_me=$'\E[38;5;231m'
+export LESS_TERMCAP_se=$'\E[38;5;231m'
+export LESS_TERMCAP_so=$'\E[38;5;167m'
+export LESS_TERMCAP_ue=$'\E[38;5;231m'
+export LESS_TERMCAP_us=$'\E[38;5;167m'
+export LSCOLORS=exgxcxdxcxegedabagacad
+
+function jira() {
+    open "https://mediaalpha.atlassian.net/browse/$1"
+}
+
