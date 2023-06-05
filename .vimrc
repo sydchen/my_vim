@@ -151,6 +151,7 @@ augroup END
 "trim spaces at the end of lines
 vnoremap ts :s/\s\+$//<CR>
 nnoremap ts :%s/\s\+$//<CR>
+nnoremap tt :retab<CR>
 
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 nmap <C-v> :call setreg("\"", system("pbpaste"), 'l')<CR>P

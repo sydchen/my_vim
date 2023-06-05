@@ -102,9 +102,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pg='ps aux | grep'
-alias ff='f() { echo find . -name "$1*"; find . -name "$1*" };f'
-
-
+alias ff='f() { echo find . -name "$1*"; find . -name "$1*"};f'
+alias dev='ssh syd@fe-syd.ma.internal'
+alias git='LANG=en_US git'
+alias gpl='git pull'
+alias gf='git diff'
+alias gst='git status'
+alias gcm='git checkout master'
+alias be='bundle exec'
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 
